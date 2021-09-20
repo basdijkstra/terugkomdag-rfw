@@ -26,3 +26,11 @@ Bij 30000 kilometer kan er wel een servicebeurt uitgevoerd worden
     Click Button  id:check-button
     Element Text Should Be  id:message  De afspraak wordt ingepland!
     Close Browser
+
+Bij 120000 kilometer kan er ook een servicebeurt uitgevoerd worden
+    Open Browser  https://robfl4.github.io/ITestMyCase/executeServicebeurt.html  Chrome
+    Maximize Browser Window
+    Input Text  id:kilometerstand  120000
+    Click Button  id:check-button
+    Element Text Should Be  id:message  De afspraak wordt ingepland!
+    Close Browser
